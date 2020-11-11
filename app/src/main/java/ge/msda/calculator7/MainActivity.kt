@@ -64,14 +64,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun negateClick (view: View) {
-//        Log.i("UserDebug", "Negated - " + resultTextView.text.drop(1))
+//      Log.i("UserDebug", "Negated - " + resultTextView.text.drop(1))
 
-        if (view is TextView) {
-            if (resultTextView.text.contains('-')) {
-                resultTextView.text = resultTextView.text.drop(1);
-            } else {
-                resultTextView.text = '-' + resultTextView.text.toString();
-            }
+        if (resultTextView.text.contains('-')) {
+            resultTextView.text = resultTextView.text.drop(1);
+        } else {
+            resultTextView.text = '-' + resultTextView.text.toString();
         }
     }
 
